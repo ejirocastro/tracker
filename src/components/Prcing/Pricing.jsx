@@ -25,10 +25,10 @@ function Pricing() {
           <h3>Pro</h3>
           <p className="price">$29.99<span>/mo</span></p>
           <ul className="features-list">
-            <li><FaCheck className="icon" /> Real-Time IP Tracking</li>
-            <li><FaCheck className="icon" /> Advanced Analytics Dashboard</li>
-            <li><FaCheck className="icon" /> Detailed Reporting</li>
-            <li><FaTimes className="icon unavailable" /> API Access</li>
+            <li><FaCheck className="icon icon-pro" /> Real-Time IP Tracking</li>
+            <li><FaCheck className="icon icon-pro" /> Advanced Analytics Dashboard</li>
+            <li><FaCheck className="icon icon-pro" /> Detailed Reporting</li>
+            <li><FaTimes className="icon icon-pro unavailable" /> API Access</li>
           </ul>
           <button className="pricing-button featured-btn">Most Popular</button>
         </div>

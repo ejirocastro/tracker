@@ -41,7 +41,7 @@ function Hero()
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <img src={ipTracker} alt="IP Tracking App" />
+        <img src={ipTracker} className='ip-image' alt="IP Tracking App" />
       </motion.div>
     </section>
   );
