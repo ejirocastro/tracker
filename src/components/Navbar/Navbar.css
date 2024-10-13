@@ -1,0 +1,73 @@
+.navbar {
+  background-color: #FFFFFF; /* White background */
+  padding: 20px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle elevation */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333; /* Dark color for contrast against white */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: #333333; /* Dark text color for visibility */
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #007BFF; /* Blue hover and focus effect */
+  transform: scale(1.05); /* Slight enlarge on hover/focus */
+  outline: none;
+}
+
+.button {
+  background-color: #007BFF; /* Blue background for the login button */
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #0056b3; /* Darker shade on hover/focus */
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links on small screens */
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex; /* Display flex for larger screens */
+  }
+}
