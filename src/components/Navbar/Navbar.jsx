@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar()
 {
@@ -35,7 +36,7 @@ function Navbar()
 
   return (
     <header className="navbar">
-      <div className="logo"><a style={{ color: "#007BFF; font-weight: bold;" }} href='/'>TrackIt</a></div>
+      <div className="logo"><Link className='logo-text' to='/home'>TrackIt</Link></div>
       <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
@@ -47,7 +48,7 @@ function Navbar()
           <li><a href="#features" onClick={toggleMenu}>Features</a></li>
           <li><a href="#pricing" onClick={toggleMenu}>Pricing</a></li>
           <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-          <li><a href="/login" className="button" onClick={toggleMenu}>Login</a></li>
+          <li><a href="/login" className="button login" onClick={toggleMenu}>Login</a></li>
         </ul>
       </nav>
     </header>
