@@ -35,7 +35,7 @@ function Navbar()
 
   return (
     <header className="navbar">
-      <div className="logo">TrackIt</div>
+      <div className="logo"><a style={{ color: "#007BFF; font-weight: bold;" }} href='/'>TrackIt</a></div>
       <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
@@ -43,11 +43,11 @@ function Navbar()
       </div>
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <ul className="nav-links">
-          <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+          <li><a href="/home" onClick={toggleMenu}>Home</a></li>
           <li><a href="#features" onClick={toggleMenu}>Features</a></li>
           <li><a href="#pricing" onClick={toggleMenu}>Pricing</a></li>
           <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-          <li><a href="#login" className="button" onClick={toggleMenu}>Login</a></li>
+          <li><a href="/login" className="button" onClick={toggleMenu}>Login</a></li>
         </ul>
       </nav>
     </header>

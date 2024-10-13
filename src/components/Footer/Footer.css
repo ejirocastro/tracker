@@ -1,9 +1,10 @@
 .footer {
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px;
+    /* background-color: #fff; */
+    background: linear-gradient(145deg, #d3ddfd, #dee9fa);
     border-top: 1px solid #eee;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   
   .footer p {
