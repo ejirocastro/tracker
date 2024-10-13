@@ -1,7 +1,8 @@
 import React from 'react';
 import './Features.css';
-import { FaMapMarkerAlt, FaChartPie, FaLock } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { FaChartPie, FaLock } from 'react-icons/fa6';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 function Features() {
   const cardVariants = {
