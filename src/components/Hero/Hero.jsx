@@ -1,11 +1,13 @@
 import React from 'react';
 import './Hero.css';
 import { motion } from 'framer-motion';
+import ipTracker from '../../assets/hero/ip-tracker.png'
 
-function Hero() {
+function Hero()
+{
   return (
     <section className="hero">
-      <motion.div 
+      <motion.div
         className="hero-content"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,13 +20,13 @@ function Hero() {
           Secure your data, monitor users, and analyze traffic with real-time IP tracking. Boost your security intelligence with <span className="brand">TrackIt</span>.
         </p>
         <div className="button-group">
-          <motion.button 
+          <motion.button
             className="cta-button"
             whileHover={{ scale: 1.1 }}
           >
             Get Started
           </motion.button>
-          <motion.button 
+          <motion.button
             className="cta-button-outline"
             whileHover={{ scale: 1.1 }}
           >
@@ -32,14 +34,14 @@ function Hero() {
           </motion.button>
         </div>
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         className="hero-image"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <img src="your_image.png" alt="IP Tracking App" />
+        <img src={ipTracker} alt="IP Tracking App" />
       </motion.div>
     </section>
   );
