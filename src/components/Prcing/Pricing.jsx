@@ -11,7 +11,7 @@ function Pricing() {
         <div className="pricing-card">
           <h3>Basic</h3>
           <p className="price">$9.99<span>/mo</span></p>
-          <ul className="features-list">
+          <ul className="features-list non-pro">
             <li><FaCheck className="icon" /> Real-Time IP Tracking</li>
             <li><FaCheck className="icon" /> Basic Analytics</li>
             <li><FaTimes className="icon unavailable" /> Advanced Reporting</li>
@@ -24,7 +24,7 @@ function Pricing() {
         <div className="pricing-card featured">
           <h3>Pro</h3>
           <p className="price">$29.99<span>/mo</span></p>
-          <ul className="features-list">
+          <ul className="features-list pro">
             <li><FaCheck className="icon icon-pro" /> Real-Time IP Tracking</li>
             <li><FaCheck className="icon icon-pro" /> Advanced Analytics Dashboard</li>
             <li><FaCheck className="icon icon-pro" /> Detailed Reporting</li>
@@ -37,7 +37,7 @@ function Pricing() {
         <div className="pricing-card">
           <h3>Enterprise</h3>
           <p className="price">$99.99<span>/mo</span></p>
-          <ul className="features-list">
+          <ul className="features-list non-pro">
             <li><FaCheck className="icon" /> Real-Time IP Tracking</li>
             <li><FaCheck className="icon" /> All Analytics & Reporting</li>
             <li><FaCheck className="icon" /> API Access</li>
